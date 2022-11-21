@@ -1,0 +1,39 @@
+<%- include('../partials/header')%>
+
+<div class="container">
+    <div class="row">
+
+        <div class="offset-md-3 col-md-3">
+            <h1><%= title %></h1>
+            <% for(var i in messages) { %>
+                <div class="flash"><%= messages[i] %></div>
+            <% } %>
+            <form action="/users/signin" method="post">
+                <div class="form-group">
+                    <label>Username:</label>
+                    <input class="w3-input w3-border" type="text" name="username" />
+                </div>
+                <br>
+                <div class="form-group">
+                    <label>Password:</label>
+                    <input  class="w3-input w3-border"type="password" name="password"/>
+                </div>
+                <br>
+                <div class="form-group">
+                    <input class="btn btn-primary" type="submit" value="Sign In" />                    
+                </div>
+                <br>
+                <div class="form-group">
+                    <a href="/users/signup" style="text-decoration: none">                
+                        <i class="fa fa-user-plus"></i> 
+                        Signup
+                    </a>
+                </div>
+            </form>
+        </div>
+        <div>
+                        
+        </div>
+    </div>
+</div>
+<%- include('../partials/footer')%>

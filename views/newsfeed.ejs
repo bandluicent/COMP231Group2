@@ -1,0 +1,29 @@
+<%- include('partials/header')%>
+
+    <!-- NewsFeed Section -->
+  <div class="w3-content w3-text-grey" id="newsfeed" style="margin-bottom:64px">
+    <h2>My <%= section %>:</h2>
+    <hr class="w3-opacity">
+    <div class="w3-content">
+      <h4><i class="fa fa-map-marker fa-fw w3-large w3-margin-right"></i> Toronto, ON</h4>
+      <h4><i class="fa fa-phone fa-fw w3-large w3-margin-right"></i> Phone: +437 984 839</h4>
+      <h4><i class="fa fa-envelope fa-fw w3-large w3-margin-right"> </i> Email: luis.bandres@centennialcollege.ca</h4>
+    </div>
+    <hr class="w3-opacity">
+    <h2>Your newsfeed:</h2>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="First Name" required name="FirstName"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Last Name" required name="LastName"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email Address" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Phone Number" required name="NewsFeedNumber"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <div  class="w3-light-grey w3-padding-large" style="width: 250px" type="submit">
+          <a class="fa fa-paper-plane" href="/" style="text-decoration:none"> Send Message</a>
+        </div>
+      </p>
+    </form>
+  <!-- End NewsFeed Section -->
+  </div>  
+
+  <%- include('partials/footer')%>

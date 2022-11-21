@@ -1,0 +1,83 @@
+body {
+  font-size: 20px;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+  position: -webkit-sticky; /*safari*/
+  position: sticky;
+  top: 0;
+  font-family: "Calibri", "Calibri", monospace;
+  font-size: 14px;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #4d5153;
+  text-align: center;
+  padding: 14px 10px;
+  text-decoration: none;
+  font-family: "Calibri", "Calibri", monospace;
+}
+
+li a:hover {
+  color: rgb(255, 255, 255);
+  background-color: #005985;
+}
+
+.active {
+  background-color: #de2626;
+  color: rgb(255, 255, 255)
+}
+
+.header img {
+  border-radius: 4px;
+  padding: 5px;
+  width: 500px;
+}
+
+.logo {
+  padding: 10px 10px;
+  width: 100%;
+}
+
+.logo-home {
+  width: 100%;
+}
+
+h3 {
+  font-family: "Calibri", "Calibri", monospace;
+}
+
+.p-body {
+  font-family: "Calibri", "Calibri", monospace;
+  text-align:justify;
+}
+
+body, h1,h2,h4,h5,h6 {font-family: "Calibri", sans-serif}
+.w3-row-padding img {margin-bottom: 10px}
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/images/COVID19.png');
+  min-height: 100%;
+}
+
+.flash{
+  color: red;
+}
+
+textarea {
+  width: 300px;
+  height: 150px;
+}
